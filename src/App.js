@@ -15,7 +15,13 @@ class App extends Component() {
   render() {
     return (
       <div className="App">
-        
+        <form>
+          <label htmlFor="taskInput">Enter task</label>
+          <input type="text" id="tasInput" />
+          <button type="submit">
+            Add Task
+          </button>
+        </form>
       </div>
     );
   }
