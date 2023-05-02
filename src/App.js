@@ -1,30 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import Form from './component/Form';
 
-class App extends Component() {
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      task: { text: ''},
-      tasks: [],
-      
-    };
-  }
 
-  render() {
+function App(){
     return (
-      <div className="App">
-        <form>
-          <label htmlFor="taskInput">Enter task</label>
-          <input type="text" id="tasInput" />
-          <button type="submit">
-            Add Task
-          </button>
-        </form>
+      <div>
+        <Form />
       </div>
     );
-  }
 }
+
 
 export default App;
