@@ -35,23 +35,24 @@ class Form extends Component {
   render() {
     const { task, tasks } = this.state;
     return (
-      <>
-        <form onSubmit={this.onSubmitTask}>
-        <label htmlFor="taskInput">Enter task</label>
+      <div className="form-container">
+        <form className="form" onSubmit={this.onSubmitTask}>
         <input 
+        className="input"
         onChange={this.handleChange}
         value={task.text}
         type="text" 
+        placeholder="Enter Task"
         id="taskInput"  
         />
-        <button type="submit">
+        <button className="btn" type="submit">
           Add Task
         </button>
         </form>
         <Overview 
         tasks={tasks}
         />
-      </>
+      </div>
       
     )
   }

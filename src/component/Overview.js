@@ -4,9 +4,9 @@ const Overview = ({ tasks }) => {
     
 
   return (
-    <ul>
+    <ul className="nav-link">
         {tasks.map((task) => {
-            return <li key={task.id}>{task.text}</li>
+            return <li className="task-item" key={task.id}>{task.text}</li>
         })}
     </ul>
   )
